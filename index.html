@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Presentation of Sentinel-2</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wenxi Mo" />
+    <meta name="date" content="2023-01-26" />
+    <script src="libs/header-attrs-2.20/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Presentation of Sentinel-2
+]
+.subtitle[
+## Remote Sensing
+]
+.author[
+### Wenxi Mo
+]
+.institute[
+### University College London, UCL
+]
+.date[
+### 2023-01-26
+]
+
+---
+
+
+.pull-left[
+## What is Sentinel-2
+an Earth observation mission from the European Commission’s Copernicus Program that systematically acquires optical imagery at high spatial resolution (10m to 60m) over the land and coastal water.
+
+### Mission
+support a wide range of service such as agricultural monitoring, emergencies management, land cover classification or water quality.
+]
+
+.pull-right[
+
+### Launch date
+June 23, 2015
+
+### Sensor
+MultiSpectral Instrument (MSI)
+
+&lt;img src="image/Sentinel_2-IMG_5873-white_(crop).jpg" width="60%" /&gt;
+
+
+.small[model of Sentinel-2. Source: [Sentinel-2](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Sentinel_2-IMG_5873-white_%28crop%29.jpg/413px-Sentinel_2-IMG_5873-white_%28crop%29.jpg)]
+]
+
+---
+
+## Characteristics
+
+[1] Spatial resolution: 10m, 20m, 60m
+
+[2] Radiometric resolution: 12 bit, enabling the image to be acquired over a range of 0 to 4095 potential light intensity values. The radiometric accuracy is less than 5% (goal 3%)
+
+[3] Temporal Resolution: The revisit frequency of each single Sentinel-2 satellite is 10 days and the combined constellation revisit is 5 days
+
+[4] Spectral resolution: 13 bands in the visible, near infrared, and short wave infrared part of the spectrum
+
+[5] Systematic global coverage from 56°N to 84°S
+
+[6] Free and open source data for analysis
+
+[7] 290km field of view
+
+---
+
+class: center, middle
+
+&lt;img src="image/bands.png" width="90%" /&gt;
+Source: [EOS data analytics](https://eos.com/find-satellite/sentinel-2/)
+
+---
+
+class: center, middle
+
+### Sepctral comparison between Sentinel-2 and Landsat8
+
+&lt;img src="image/Landsat.v.Sentinel-2.png" width="2400" /&gt;
+Source: [Landsat.GSFC.NASA](https://landsat.gsfc.nasa.gov/wp-content/uploads/2015/06/Landsat.v.Sentinel-2.png)
+
+The Landsat 8's two sensors outperform the sentinel-2 in the identification of wavelengths above 3000nm.
+
+---
+
+##  Application: Help Europe's maritime surveillance
+
+1. detection of potentially suspicious vessels involved in trafficking or smuggling of goods
+
+2. monitoring of ship-to-ship transfers
+
+3. early warning and identification of criminal trafficking and smuggling.
+
+&lt;img src="image/maritime.png" width="1095" /&gt;
+Source: [EMSA](https://www.emsa.europa.eu/copernicus/cms-cases/item/3992-copernicus-infosheet-customs-activities-overview.html)
+
+---
+
+## Application: Climate change: sea ice monitoring
+
+
+&lt;img src="image/1981.png" width="70%" /&gt;
+    [1981-2010](https://climate.copernicus.eu/sea-ice-cover-december-2022)
+&lt;img src="image/1991.png" width="70%" /&gt;
+    [1991-2020](https://climate.copernicus.eu/sea-ice-cover-december-2022)
+
+---
+## Reflection on Sentinel-2
+
+Sentinel-2's sensor called MSI, and it can identify 13 bands, enabling two to three visits to most inhabited areas of the world in five days, and are widely used in agricultural production, emergency management, geological surveys, hydrological monitoring, climate monitoring and anthropogenic activity monitoring management.
+
+&lt;img src="image/data format.jpg" width="70%" /&gt;
+
+data format. Source: [The European Space Agency](https://sentinels.copernicus.eu/ar/web/sentinel/user-guides/sentinel-2-msi/data-formats)
+
+---
+## Reflection on further use for my work
+
+* Sentinel-2 provides a very rich source of data and a standardised data structure for me to access and analyse, and covers a wide range of topics
+
+* The visualisation of the data allows me to visualise patterns and see trends, such as urban development and sea ice monitoring
+
+* This data is still valuable for in-depth applications in many aspects such as forest management, emergency management
+
+---
+
+# Reference
+* “Climate Change | Copernicus.” Www.copernicus.eu, www.copernicus.eu/en/copernicus-services/climate-change. Accessed 26 Jan. 2023.
+
+* “Land | Copernicus.” Www.copernicus.eu, www.copernicus.eu/en/copernicus-services/land.
+
+* “Sentinel-2: Satellite Imagery, Overview, and Characteristics.” Eos.com, 10 Oct. 2017, eos.com/find-satellite/sentinel-2/.
+
+* “User Guides - Sentinel-2 MSI - Applications - Sentinel Online - Sentinel Online.” Sentinels.copernicus.eu, sentinels.copernicus.eu/ar/web/sentinel/user-guides/sentinel-2-msi/applications. Accessed 26 Jan. 2023.
+
+* webmaster. “Copernicus Infosheet Customs Activities - Overview.” Www.emsa.europa.eu, www.emsa.europa.eu/copernicus/cms-cases/item/3992-copernicus-infosheet-customs-activities-overview.html. Accessed 26 Jan. 2023.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
